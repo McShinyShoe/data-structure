@@ -224,15 +224,15 @@ namespace shiny {
             return __SIZE_MAX__;
         }
         dataType min() const {
-            Iterator temp = begin();
-            for (Iterator i = begin(); i != end(); i++)
+            ConstIterator temp = begin();
+            for (ConstIterator i = begin(); i != end(); i++)
                 if(*temp < *i)
                     temp = i;
             return *temp;
         };
         dataType max() const {
-            Iterator temp = begin();
-            for (Iterator i = begin(); i != end(); i++)
+            ConstIterator temp = begin();
+            for (ConstIterator i = begin(); i != end(); i++)
                 if(*temp > *i)
                     temp = i;
             return *temp;
