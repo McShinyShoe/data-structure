@@ -33,7 +33,7 @@ namespace shiny {
                 cursor = cursor->next;
             return cursor;
         }
-        Node* at(sie_t index) {
+        Node* at(size_t index) {
             if(m_head == nullptr)
                 return nullptr;
             Node* cursor = m_head;
@@ -41,7 +41,7 @@ namespace shiny {
                 cursor = cursor->next;
             return cursor;
         }
-        const Node* at(sie_t index) const {
+        const Node* at(size_t index) const {
             if(m_head == nullptr)
                 return nullptr;
             Node* cursor = m_head;
